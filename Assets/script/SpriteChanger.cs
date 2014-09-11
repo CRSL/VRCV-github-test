@@ -229,9 +229,9 @@ public class SpriteChanger : MonoBehaviour {
 								imgct = 0;
 						}
 						this.GetComponent<SpriteRenderer> ().sprite = SprList [imgct];
-				} else if (Input.GetButtonDown ("dual")) {
+				} else if (Input.GetButtonDown ("dual")) { //2画面表示なら2枚ずつ送る。1画面表示なら1枚ずつ送る。
 						if (pfeed == 1) {
-								pfeed = defaultpfeed;
+								pfeed = defaultpfeed; //一応、デフォルトのn画面表示と1画面表示の切り替えという形をとる。
 						} else {
 								pfeed = 1;
 						}
