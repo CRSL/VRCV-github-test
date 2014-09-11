@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{AE487322-9631-2E87-4D4C-0EBB0CB79DC6}</ProjectGuid>
+	<ProjectGuid>{7F3B3FA9-605F-5940-6A29-D1212FA52BD3}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -69,7 +69,7 @@
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
      <None Include="Assets\OVR\Shaders\OVRGUIShader.shader" />
  <Reference Include="LeapCSharp.NET3.5">
- <HintPath>D:/UnityProject/VRCV/201409110900/Assets/Plugins/LeapCSharp.NET3.5.dll</HintPath>
+ <HintPath>D:/Documents/GitHub/VRCV-github-test/Assets/Plugins/LeapCSharp.NET3.5.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
