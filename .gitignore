@@ -34,3 +34,11 @@ Icon
 # Files that might appear on external disk
 .Spotlight-V100
 .Trashes
+
+# Files Unity use for build
+Library
+Temp
+*.pidb
+*.unityproj
+*.sln
+*.userprefs
