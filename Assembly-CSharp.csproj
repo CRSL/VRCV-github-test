@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\InstantiatePage.cs" />
      <Compile Include="Assets\OVR\Scripts\OVRCamera.cs" />
      <Compile Include="Assets\OVR\Scripts\OVRCameraController.cs" />
      <Compile Include="Assets\OVR\Scripts\OVRCrosshair.cs" />
@@ -61,6 +62,7 @@
      <Compile Include="Assets\OVR\Scripts\OVRUtils.cs" />
      <Compile Include="Assets\OVR\Scripts\OVRVisionGuide.cs" />
      <Compile Include="Assets\script\BookController.cs" />
+     <Compile Include="Assets\script\BookLoader.cs" />
      <Compile Include="Assets\script\PageOrganizer.cs" />
      <Compile Include="Assets\script\SpriteChanger.cs" />
      <Compile Include="Assets\script\SpriteChanger2.cs" />
