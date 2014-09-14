@@ -19,7 +19,7 @@ RenderSettings:
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientLight: {r: .705882311, g: .695501685, b: .695501685, a: 1}
-  m_SkyboxMaterial: {fileID: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 9ba05f538ee36044da5cd2a4f14a8b18, type: 2}
   m_HaloStrength: .5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -281,7 +281,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 483861933}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 87292b4cb6314cd4595a00fb04ced5c0, type: 3}
   m_Name: 
@@ -401,6 +401,94 @@ MonoBehaviour:
   yRot_max: 90
   x_inv: 0
   yRot_inv: 0
+--- !u!1 &826220908
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 826220909}
+  - 212: {fileID: 826220912}
+  - 114: {fileID: 826220911}
+  - 114: {fileID: 826220910}
+  m_Layer: 0
+  m_Name: CenterImageSprite
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &826220909
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 826220908}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1714107164}
+  m_RootOrder: 4
+--- !u!114 &826220910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 826220908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f04ecc8f21f8bb54f85f882eaef1c90a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sen_x: .0199999996
+  x_min: -.5
+  x_max: .5
+  sen_yRot: 20
+  yRot_min: -90
+  yRot_max: 90
+  x_inv: 0
+  yRot_inv: 0
+--- !u!114 &826220911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 826220908}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87292b4cb6314cd4595a00fb04ced5c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frame_w: 1
+  frame_h: 1
+  pageoffset: 0
+  isRight: 1
+  pfeed: 2
+  ImgPath: ImageFolder
+--- !u!212 &826220912
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 826220908}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &939839671
 GameObject:
   m_ObjectHideFlags: 0
@@ -707,6 +795,7 @@ GameObject:
   - 4: {fileID: 1714107164}
   - 114: {fileID: 1714107165}
   - 114: {fileID: 1714107166}
+  - 114: {fileID: 1714107167}
   m_Layer: 0
   m_Name: BackSheet
   m_TagString: Untagged
@@ -728,6 +817,7 @@ Transform:
   - {fileID: 806309450}
   - {fileID: 483861935}
   - {fileID: 1912078864}
+  - {fileID: 826220909}
   m_Father: {fileID: 0}
   m_RootOrder: 4
 --- !u!114 &1714107165
@@ -773,6 +863,26 @@ MonoBehaviour:
   frame_h: 1
   pageoffset: 0
   pfeed: 1
+  ImgPath: ImageFolder
+--- !u!114 &1714107167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1714107163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4b041e46775c9b4c81a96b41c13bb18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RightPageSprite: RightImageSprite
+  defaultRightPage: 0
+  LeftPageSprite: LeftImageSprite
+  defaultLeftPage: 1
+  CenterPageSprite: CenterImageSprite
+  frame_w: 1
+  frame_h: 1
+  defaultpfeed: 2
   ImgPath: ImageFolder
 --- !u!1 &1781532241
 GameObject:
@@ -905,7 +1015,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1912078863}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 87292b4cb6314cd4595a00fb04ced5c0, type: 3}
   m_Name: 

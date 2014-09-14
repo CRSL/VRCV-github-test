@@ -15,7 +15,7 @@ public class BookController : MonoBehaviour {
 
 	//private GameObject Lpanel;
 	//private GameObject Rpanel;
-	private GameObject Lsprite;
+	//private GameObject Lsprite;
 
 
 
@@ -65,7 +65,7 @@ public class BookController : MonoBehaviour {
 
 		//Lpanel = GameObject.Find ("LeftBaseQuad");
 		//Rpanel = GameObject.Find ("RightBaseQuad");
-		Lsprite = GameObject.Find ("LeftImageSprite");
+		//Lsprite = GameObject.Find ("LeftImageSprite");
 
 	//	MCam = GameObject.Find("OVRCameraController");
 	}
@@ -133,9 +133,9 @@ public class BookController : MonoBehaviour {
 
 		//画面数切り替え
 		//左ページをオン・オフすることで実現している。
-		if (Input.GetButtonDown ("dual")){
-			Lsprite.renderer.enabled = !Lsprite.renderer.enabled;
-		}
+		//if (Input.GetButtonDown ("dual")){
+		//	Lsprite.renderer.enabled = !Lsprite.renderer.enabled;
+		//}
 
 
 
